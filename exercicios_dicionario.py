@@ -88,38 +88,38 @@
 
 # print(f"No total foram {Aproveitamento['Total']} gols!")
 
-Continuar = "S"
-NumSequencia = 1
-Dados = []
-Lista_Mulheres = []
-Lista_Acima_media = []
+# Continuar = "S"
+# NumSequencia = 1
+# Dados = []
+# Lista_Mulheres = []
+# Lista_Acima_media = []
 
-while Continuar == "S":
-  Nome = input("Nome: ")
-  Idade = int(input("Idade: "))
-  Sexo = input("Sexo:[M/F] ")
-  Sequencia = {
-    "Nome":Nome,
-    "Idade":Idade,
-    "Sexo":Sexo
-  }
+# while Continuar == "S":
+#   Nome = input("Nome: ")
+#   Idade = int(input("Idade: "))
+#   Sexo = input("Sexo:[M/F] ")
+#   Sequencia = {
+#     "Nome":Nome,
+#     "Idade":Idade,
+#     "Sexo":Sexo
+#   }
 
-  Dados.append(Sequencia)
-  NumSequencia += 1
-  Continuar = input("Quer continuar?[S/N] ")
+#   Dados.append(Sequencia)
+#   NumSequencia += 1
+#   Continuar = input("Quer continuar?[S/N] ")
 
-Total = sum(1 for reg in Dados)
+# Total = sum(1 for reg in Dados)
 
-Idade_Media = sum(pessoa["Idade"] for pessoa in Dados) / Total
+# Idade_Media = sum(pessoa["Idade"] for pessoa in Dados) / Total
 
-for Pessoa in Dados:
-  if Pessoa["Sexo"] == "F":
-    Lista_Mulheres.append(Pessoa["Nome"])
+# for Pessoa in Dados:
+#   if Pessoa["Sexo"] == "F":
+#     Lista_Mulheres.append(Pessoa["Nome"])
 
-  if Pessoa["Idade"] > Idade_Media:
-    Lista_Acima_media.append(Pessoa["Nome"])
+#   if Pessoa["Idade"] > Idade_Media:
+#     Lista_Acima_media.append(Pessoa["Nome"])
 
-print(f"No total foram listadas {Total} pessoas")
-print(f"A média de idade é {Idade_Media}")
-print(f"Segue a lista com todas as mulheres {Lista_Mulheres}")
-print(f"Segue a lista com todas as pessoas que possuem a idade acima da média {Lista_Acima_media}")
+# print(f"No total foram listadas {Total} pessoas")
+# print(f"A média de idade é {Idade_Media}")
+# print(f"Segue a lista com todas as mulheres {Lista_Mulheres}")
+# print(f"Segue a lista com todas as pessoas que possuem a idade acima da média {Lista_Acima_media}")
