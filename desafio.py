@@ -49,7 +49,7 @@ while continuar:
 
     #Calcula o bônus que será recebido e retorna os dados em uma lista [nome, salario, bonus, bonus recebido]
     resultado_bonus = calcula_bonus_kpi(nome,salario,bonus) 
-    resultado_bonus["data_inserção"] = datetime.today().strftime("%D-%M-%Y %H:%M:%S")
+    resultado_bonus["data_inserção"] = datetime.today().strftime("%d-%m-%Y %H:%M:%S")
 
     #Insere todos esses dados em um CSV para manter histórico
     caminho_arquivo:str = "bonus_por_pessoa.csv"
